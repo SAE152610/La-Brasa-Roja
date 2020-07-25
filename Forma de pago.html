@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    *{
+           padding: 0px;
+           margin: 0px;
+     }
+     
+    body {
+        background-image: url('img/Fondo1.JPEG');
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    .Inicio{
+            padding: 1%;
+            margin: 2%;
+            display: inline-block;
+            margin-left: 10%;
+            border-style: solid;
+            background-color: rgb(211, 176, 159);
+     }
+    .Iconos > li{
+            display: inline-block;
+     }
+    .navegacion {
+        padding: 1%;
+        margin: 2%;
+        margin-left: 50%;
+        margin-top: -9%;
+        text-align: center; 
+    } 
+    .navegacion ol >li{
+        display: inline-block;
+    }
+    .migas{
+        margin-left: 10%;
+        font-size: 21px;
+    }
+    .datos {
+        border-style: solid;
+        margin-left: 10%;
+        padding: 30px;
+        margin-right: 11%;
+        background-image: url('img/Fondo2.JPEG');
+    }
+    .datos > h3 {
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 73%;
+        margin-bottom: 30px;
+        color: #000000;
+        display: inline-block;
+    }
+    .tarjetas {
+        background-color: rgb(231, 183, 175);
+        border-radius: 30px;
+        text-align: center;
+    }
+    .tarjetas1 >li {
+        display: inline-block;
+    }    
+    .menu-footer{
+        text-align: center;
+        background-color: red;
+    }
+    .menu-footer > li{
+           display: inline-block;
+           padding: 10px;
+           cursor: pointer;    
+    }      
+    .menu-footer tr > td{
+        margin-top: -400px;
+    }
+
+</style>
+<body>
+    <div>
+    <div class="Inicio" width="100%">
+        <ol class="Iconos">
+            <li><a href="Bienvenidos.html"><img src="img/la brasa.png" width="260px" height="80px"></a></li>
+            <li><h3>Haz tu pedido</h3></li> 
+            <li><h1 style="color: red;">YA..!</h1></li>
+        </ol>
+    </div>
+    <div class="navegacion">
+        <ol>
+            <li><a href="Menu.html"><button  type="button" class="btn btn-light btn-lg" ><b>MENU</b></button></a></li>
+            <li><a href="datos cliente.html"> <button type="button" class="btn btn-light btn-lg"><b>REGISTRATE</b></button></a></li>
+            <li> <a href="Contactanos.html"> <button type="button" class="btn btn-light btn-lg"><b>CONTACTANOS</b></button></a></li>
+            </ol>
+    </div>
+    
+    <p class="migas"><a href="Bienvenidos.html"></u>Inicio</u></a>><a href="datos cliente.html"></u>Registrate</u></a>><a href="pedido.html"></u>Pedido</u></a>>Medio de pago</p>
+        
+    <div class="datos">
+         <h3>Confirmacion de pedido</h3><a href="Menu.html"><button  type="button" class="btn btn-danger btn-sm" ><b>MENU</b></button></a>
+
+    <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1"><h5>Efectivo</h5></label>
+              </div><hr>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2"><h5>Tarjeta de credito</h5></label>
+              </div><br>
+              <table width="100%" class="tarjetas">
+                <tr width="100%">
+                     <td width="20%"> 
+                         <img src="img/credito.png" width="40%">
+                     </td>
+                     <td>
+                        <ol>
+                            <h5>Pagar con tarjeta</h5>
+                        </ol>
+                    </td>
+                     <td>
+                         <ol class="tarjetas1">
+                              <li><img src="img/american.png" width="60px"></li>
+                              <li><img src="img/master.png" width="60px"></li>
+                              <li><img src="img/visa.png" width="67px"></li>
+                         </ol>
+                     </td>
+                </tr>
+            </table><br>
+            <form>
+                <div class="form-row">
+                  <div class="col-md-10 mb-1">
+                    <label for="validationDefault01"><h5>Numero de la tarjeta</h5></label>
+                    <input type="number" class="form-control" id="validationDefault01">
+                  </div>
+                </div><br>
+            <div class="form-row">    
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault01"><h5>Fecha de vencimiento</h5></label>
+                    <input type="text" class="form-control" id="validationDefault01" value="(MM/AA)" required>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationDefault02"><h5>CVV 3-4 Digitos</h5></label>
+                    <input type="number" class="form-control" id="validationDefault02">
+                </div>
+                </div><br>
+                <div class="form-row">
+                        <div class="col-md-20 mb-1">
+                          <label for="validationDefault01"><h5>Numero de celular</h5></label>
+                          <input type="number" class="form-control" id="validationDefault01">
+                    </div>               
+                  </div> <br><br>
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1"><h5>Yo acepto los terminos y condiciones y las politicas de privacidad</h5></label>
+                  </div> <br>
+                  <a href="Gracias.html"><button type="button" class="btn btn-primary btn-lg">Realizar el pago</button></a>       
+                </div>
+            </div>
+        <br><br><br><br><br>
+        <table width="100%" class="menu-footer">
+            <tr width="100%">
+                 <td width="33%"> 
+                     <img src="img/la brasa.png" width="40%">
+                 </td>
+                 <td>
+                    <ol class="menu-footer">
+                        <a href="nuestra empresa.html"><button  type="button" class="btn btn-danger btn-lg"><b>Quienes somos</b></button></a></li>
+                        <a href="Contactanos.html"><button  type="button" class="btn btn-danger btn-lg" ><b>Contactanos</b></button></a></li>
+                    </ol>
+                </td>
+                 <td>
+                     <ol class="menu-footer">
+                          <li><a target="blanc" href="https://www.facebook.com/LaBrasaRoja/?fref=ts"><img src="img/Facebook.png" width="57px"></a></li>
+                          <li><a target="blanc" href="https://twitter.com/LaBrasaRoja"><img src="img/Twitter-Logo.png" width="75px"></a></li>
+                     </ol>
+                 </td>
+            </tr>
+        </table>
+</body>
+</html>
+
+
